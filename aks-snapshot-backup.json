@@ -19,8 +19,7 @@
       "defaultValue": "W. Europe Standard Time"
     },
     "environment": {
-      "type": "string",
-      "defaultValue": ""
+      "type": "string"
      },
     "operatorRoleDefinitionGuid": {
       "type": "string",
