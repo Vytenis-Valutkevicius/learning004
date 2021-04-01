@@ -62,7 +62,7 @@
       "type": "Microsoft.Authorization/roleDefinitions",
       "name": "[parameters('contributorRoleDefinitionGuid')]",
       "properties": {
-        "roleName": "AKS Snapshot Backup Contributor [parameters('environment')]",
+        "roleName": "[format('AKS Snapshot Backup Contributor {0}', parameters('environment')]",
         "description": "Grants permission to manage snapshots",
         "type": "customRole",
         "permissions": [
@@ -84,7 +84,7 @@
       "type": "Microsoft.Authorization/roleDefinitions",
       "name": "[parameters('operatorRoleDefinitionGuid')]",
       "properties": {
-        "roleName": "AKS Snapshot Backup Operator [parameters('environment')]",
+        "roleName": "[format('AKS Snapshot Backup Operator {0}', parameters('environment')]",
         "description": "Grants permission to take snapshots from managed disks",
         "type": "customRole",
         "permissions": [
